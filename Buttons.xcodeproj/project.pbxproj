@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8217BB78251DB03700CE610D /* GoogleSigninLightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217BB77251DB03700CE610D /* GoogleSigninLightButton.swift */; };
 		8237CD85251D845900B6B8AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CD84251D845900B6B8AC /* AppDelegate.swift */; };
 		8237CD87251D845900B6B8AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CD86251D845900B6B8AC /* SceneDelegate.swift */; };
 		8237CD89251D845900B6B8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CD88251D845900B6B8AC /* ViewController.swift */; };
 		8237CD8C251D845900B6B8AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8237CD8A251D845900B6B8AC /* Main.storyboard */; };
 		8237CD8E251D845B00B6B8AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8237CD8D251D845B00B6B8AC /* Assets.xcassets */; };
 		8237CD91251D845B00B6B8AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8237CD8F251D845B00B6B8AC /* LaunchScreen.storyboard */; };
+		8237CD9C251DA9E700B6B8AC /* GoogleDarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CD9B251DA9E700B6B8AC /* GoogleDarkButton.swift */; };
+		8237CD9F251DAACC00B6B8AC /* UIButton+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CD9E251DAACC00B6B8AC /* UIButton+Util.swift */; };
+		8237CDA2251DAB6000B6B8AC /* GoogleLightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CDA1251DAB6000B6B8AC /* GoogleLightButton.swift */; };
+		8237CDA5251DABD400B6B8AC /* GoogleSigninDarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CDA4251DABD400B6B8AC /* GoogleSigninDarkButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8217BB77251DB03700CE610D /* GoogleSigninLightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSigninLightButton.swift; sourceTree = "<group>"; };
 		8237CD81251D845900B6B8AC /* Buttons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buttons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8237CD84251D845900B6B8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8237CD86251D845900B6B8AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,10 @@
 		8237CD8D251D845B00B6B8AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8237CD90251D845B00B6B8AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8237CD92251D845B00B6B8AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8237CD9B251DA9E700B6B8AC /* GoogleDarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleDarkButton.swift; sourceTree = "<group>"; };
+		8237CD9E251DAACC00B6B8AC /* UIButton+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Util.swift"; sourceTree = "<group>"; };
+		8237CDA1251DAB6000B6B8AC /* GoogleLightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLightButton.swift; sourceTree = "<group>"; };
+		8237CDA4251DABD400B6B8AC /* GoogleSigninDarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSigninDarkButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		8237CD83251D845900B6B8AC /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				8237CD9A251DA9DB00B6B8AC /* Button */,
 				8237CD84251D845900B6B8AC /* AppDelegate.swift */,
 				8237CD86251D845900B6B8AC /* SceneDelegate.swift */,
 				8237CD88251D845900B6B8AC /* ViewController.swift */,
@@ -65,6 +76,18 @@
 				8237CD92251D845B00B6B8AC /* Info.plist */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		8237CD9A251DA9DB00B6B8AC /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				8237CD9E251DAACC00B6B8AC /* UIButton+Util.swift */,
+				8237CD9B251DA9E700B6B8AC /* GoogleDarkButton.swift */,
+				8237CDA1251DAB6000B6B8AC /* GoogleLightButton.swift */,
+				8237CDA4251DABD400B6B8AC /* GoogleSigninDarkButton.swift */,
+				8217BB77251DB03700CE610D /* GoogleSigninLightButton.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8237CD9C251DA9E700B6B8AC /* GoogleDarkButton.swift in Sources */,
+				8217BB78251DB03700CE610D /* GoogleSigninLightButton.swift in Sources */,
+				8237CDA5251DABD400B6B8AC /* GoogleSigninDarkButton.swift in Sources */,
+				8237CDA2251DAB6000B6B8AC /* GoogleLightButton.swift in Sources */,
 				8237CD89251D845900B6B8AC /* ViewController.swift in Sources */,
+				8237CD9F251DAACC00B6B8AC /* UIButton+Util.swift in Sources */,
 				8237CD85251D845900B6B8AC /* AppDelegate.swift in Sources */,
 				8237CD87251D845900B6B8AC /* SceneDelegate.swift in Sources */,
 			);
