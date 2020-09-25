@@ -19,21 +19,32 @@ class GoogleSigninWhiteShadowButton: UIButton {
   
   override init(frame: CGRect) {
     super.init(frame: frame)
-
-    setBackgroundColor(.white, for: .normal)
     
     setImage(C.imageForNormal, for: .normal)
     setTitleColor(.black, for: .normal)
     setTitle("Sign in with Google", for: .normal)
-
     titleEdgeInsets = C.titleEdgeInsets
+  }
+  
+  private var shadowLayer: CAShapeLayer!
+
+  override func layoutSubviews() {
+    super.layoutSubviews()
     
-    layer.cornerRadius = 8
-    
-    layer.shadowColor = UIColor.black.cgColor
-    layer.shadowOpacity = 0.5
-    layer.shadowRadius = 2
-    layer.shadowOffset = CGSize(width: 1, height: 1)
+    if shadowLayer == nil {
+      shadowLayer = CAShapeLayer()
+      shadowLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: 4).cgPath
+      shadowLayer.fillColor = UIColor.white.cgColor
+      
+      shadowLayer.shadowColor = UIColor.darkGray.cgColor
+      shadowLayer.shadowPath = shadowLayer.path
+      shadowLayer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+      shadowLayer.shadowOpacity = 0.5
+      shadowLayer.shadowRadius = 2
+      
+      layer.insertSublayer(shadowLayer, at: 0)
+      //layer.insertSublayer(shadowLayer, below: nil) // also works
+    }
   }
   
   convenience init() {
