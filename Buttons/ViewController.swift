@@ -41,6 +41,21 @@ class ViewController: UIViewController {
     return v
   }()
   
+  lazy var googleSigninWhiteShadowButton: UIButton = {
+    let v = GoogleSigninWhiteShadowButton()
+    return v
+  }()
+  
+  lazy var appleSigninWhiteButton: UIButton = {
+    let v = AppleSigninWhiteButton()
+    return v
+  }()
+  
+  lazy var appleSigninWhiteShadowButton: UIButton = {
+    let v = AppleSigninWhiteShadowButton()
+    return v
+  }()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
@@ -56,6 +71,9 @@ class ViewController: UIViewController {
     stackView.addArrangedSubview(googleLightButton)
     stackView.addArrangedSubview(googleSigninDarkButton)
     stackView.addArrangedSubview(googleSigninLightButton)
+    stackView.addArrangedSubview(googleSigninWhiteShadowButton)
+    stackView.addArrangedSubview(appleSigninWhiteButton)
+    stackView.addArrangedSubview(appleSigninWhiteShadowButton)
 
     NSLayoutConstraint.activate([
       scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		8217BB78251DB03700CE610D /* GoogleSigninLightButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217BB77251DB03700CE610D /* GoogleSigninLightButton.swift */; };
+		8217BB7B251DB9BA00CE610D /* AppleSigninWhiteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217BB7A251DB9BA00CE610D /* AppleSigninWhiteButton.swift */; };
+		8217BB7E251DBE8000CE610D /* AppleSigninWhiteShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217BB7D251DBE8000CE610D /* AppleSigninWhiteShadowButton.swift */; };
+		8217BB83251DBF6D00CE610D /* Apple_512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 8217BB81251DBF6D00CE610D /* Apple_512x512.png */; };
+		8217BB84251DBF6D00CE610D /* Google_1024x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 8217BB82251DBF6D00CE610D /* Google_1024x1024.png */; };
+		8217BB88251DC2B900CE610D /* GoogleSigninWhiteShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8217BB87251DC2B900CE610D /* GoogleSigninWhiteShadowButton.swift */; };
 		8237CD85251D845900B6B8AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CD84251D845900B6B8AC /* AppDelegate.swift */; };
 		8237CD87251D845900B6B8AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CD86251D845900B6B8AC /* SceneDelegate.swift */; };
 		8237CD89251D845900B6B8AC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8237CD88251D845900B6B8AC /* ViewController.swift */; };
@@ -22,6 +27,11 @@
 
 /* Begin PBXFileReference section */
 		8217BB77251DB03700CE610D /* GoogleSigninLightButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSigninLightButton.swift; sourceTree = "<group>"; };
+		8217BB7A251DB9BA00CE610D /* AppleSigninWhiteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSigninWhiteButton.swift; sourceTree = "<group>"; };
+		8217BB7D251DBE8000CE610D /* AppleSigninWhiteShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSigninWhiteShadowButton.swift; sourceTree = "<group>"; };
+		8217BB81251DBF6D00CE610D /* Apple_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple_512x512.png; sourceTree = "<group>"; };
+		8217BB82251DBF6D00CE610D /* Google_1024x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Google_1024x1024.png; sourceTree = "<group>"; };
+		8217BB87251DC2B900CE610D /* GoogleSigninWhiteShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSigninWhiteShadowButton.swift; sourceTree = "<group>"; };
 		8237CD81251D845900B6B8AC /* Buttons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buttons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8237CD84251D845900B6B8AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8237CD86251D845900B6B8AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8217BB80251DBF2800CE610D /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8217BB81251DBF6D00CE610D /* Apple_512x512.png */,
+				8217BB82251DBF6D00CE610D /* Google_1024x1024.png */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		8237CD78251D845900B6B8AC = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +85,7 @@
 		8237CD83251D845900B6B8AC /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				8217BB80251DBF2800CE610D /* Resource */,
 				8237CD9A251DA9DB00B6B8AC /* Button */,
 				8237CD84251D845900B6B8AC /* AppDelegate.swift */,
 				8237CD86251D845900B6B8AC /* SceneDelegate.swift */,
@@ -86,6 +106,9 @@
 				8237CDA1251DAB6000B6B8AC /* GoogleLightButton.swift */,
 				8237CDA4251DABD400B6B8AC /* GoogleSigninDarkButton.swift */,
 				8217BB77251DB03700CE610D /* GoogleSigninLightButton.swift */,
+				8217BB87251DC2B900CE610D /* GoogleSigninWhiteShadowButton.swift */,
+				8217BB7A251DB9BA00CE610D /* AppleSigninWhiteButton.swift */,
+				8217BB7D251DBE8000CE610D /* AppleSigninWhiteShadowButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -147,7 +170,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8217BB84251DBF6D00CE610D /* Google_1024x1024.png in Resources */,
 				8237CD91251D845B00B6B8AC /* LaunchScreen.storyboard in Resources */,
+				8217BB83251DBF6D00CE610D /* Apple_512x512.png in Resources */,
 				8237CD8E251D845B00B6B8AC /* Assets.xcassets in Resources */,
 				8237CD8C251D845900B6B8AC /* Main.storyboard in Resources */,
 			);
@@ -161,8 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8237CD9C251DA9E700B6B8AC /* GoogleDarkButton.swift in Sources */,
+				8217BB7B251DB9BA00CE610D /* AppleSigninWhiteButton.swift in Sources */,
 				8217BB78251DB03700CE610D /* GoogleSigninLightButton.swift in Sources */,
 				8237CDA5251DABD400B6B8AC /* GoogleSigninDarkButton.swift in Sources */,
+				8217BB7E251DBE8000CE610D /* AppleSigninWhiteShadowButton.swift in Sources */,
+				8217BB88251DC2B900CE610D /* GoogleSigninWhiteShadowButton.swift in Sources */,
 				8237CDA2251DAB6000B6B8AC /* GoogleLightButton.swift in Sources */,
 				8237CD89251D845900B6B8AC /* ViewController.swift in Sources */,
 				8237CD9F251DAACC00B6B8AC /* UIButton+Util.swift in Sources */,
